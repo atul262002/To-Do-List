@@ -1,0 +1,87 @@
+/* Overall styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    text-align: center;
+    background-color: #3498db;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  /* Task list */
+  .tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* .content{
+    display:flex;
+    flex-wrap: wrap;
+  } */
+  .task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .editdelete {
+    display: flex;
+    align-items: center;
+  }
+  
+  .editdelete i {
+    cursor: pointer;
+    font-size: 18px;
+    color: #3498db;
+    margin-left: 10px;
+  }
+  
+  /* Style for completed tasks */
+  .task.completed {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+  }
+  
+  /* Style for edit mode */
+  .task.edit-mode input[type="text"] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
